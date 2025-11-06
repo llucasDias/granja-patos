@@ -42,4 +42,61 @@ public class VendaEntity {
     private Set<PatoEntity> patos = new HashSet<>();
 
 
+
+    ///  GETTERS AND SETTERS
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Set<PatoEntity> getPatos() {
+        return patos;
+    }
+
+    public void setPatos(Set<PatoEntity> patos) {
+        this.patos = patos;
+    }
+
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
+    }
+
+    public BigDecimal getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(BigDecimal desconto) {
+        this.desconto = desconto;
+    }
+
+    public BigDecimal getTotal() {
+        return total;
+    }
+
+    public void setTotal(BigDecimal total) {
+        this.total = total;
+    }
+
+    public VendedorEntity getVendedor() {
+        return vendedor;
+    }
+
+    public void setVendedor(VendedorEntity vendedor) {
+        this.vendedor = vendedor;
+    }
+
+    public ClienteEntity getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(ClienteEntity cliente) {
+        this.cliente = cliente;
+    }
 }

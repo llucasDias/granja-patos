@@ -19,4 +19,28 @@ public class ClienteEntity {
     private boolean desconto;
 
 
+///  GETTERS AND SETTERS
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public boolean isDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(boolean desconto) {
+        this.desconto = desconto;
+    }
 }

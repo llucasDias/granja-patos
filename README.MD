@@ -1,8 +1,8 @@
-# 🦆 Granja de Patos API
+# Granja de Patos API
 
-## 📖 Descrição do Desafio
+##  Descrição do Desafio
 
-Este desafio consiste em uma **API REST desenvolvida em Java com Spring Boot** para gerenciar uma granja de patos, incluindo funcionalidades de:
+Este desafio consiste em uma **API REST desenvolvida em Java com Spring Boot** para gerenciar uma granja de patos, suas funcionalidades são:
 
 - Cadastro de Patos, Clientes e Vendedores
 - Registro de Vendas, aplicando descontos para clientes elegíveis
@@ -14,12 +14,12 @@ O sistema utiliza **SQL Server** como banco de dados, **Docker** para containeri
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Java 17**
 - **Spring Boot**
 - **Spring Data JPA / Hibernate**
-- **SQL Server** (Docker)
+- **SQL Server**
 - **Apache POI** (relatórios Excel)
 - **Docker
 - **DBeaver** (modelagem e gerenciamento do banco)
@@ -27,7 +27,7 @@ O sistema utiliza **SQL Server** como banco de dados, **Docker** para containeri
 
 ---
 
-## 🗓️ Cronograma de Desenvolvimento
+## 🗓 Cronograma
 
 | Etapa | Descrição | Estimativa de Horas |
 |-------|-----------|-------------------|
@@ -53,8 +53,9 @@ O sistema utiliza **SQL Server** como banco de dados, **Docker** para containeri
 
 ### Diagrama ER:
 
-### Script:
+docs/diagramaer.png
 
+### Script:
 
 ```sql
 
@@ -110,3 +111,4 @@ CONSTRAINT FK_PATO_VENDA_PATO FOREIGN KEY (ID_PATO) REFERENCES PATO(ID),
 CONSTRAINT FK_PATO_VENDA_VENDA FOREIGN KEY (ID_VENDA) REFERENCES VENDA(ID)
 
 )
+
