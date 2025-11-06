@@ -3,6 +3,7 @@ package com.lucas.granjapatos.service;
 import com.lucas.granjapatos.dto.CadastroPato;
 import com.lucas.granjapatos.model.PatoEntity;
 import com.lucas.granjapatos.repository.PatoRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 
@@ -19,6 +20,7 @@ public class PatoService {
     }
 
 
+    @Transactional
     public PatoEntity cadastrarPato(CadastroPato dto) {
 
         PatoEntity pato = new PatoEntity();

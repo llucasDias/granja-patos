@@ -3,6 +3,7 @@ package com.lucas.granjapatos.service;
 import com.lucas.granjapatos.dto.CadastroVendedor;
 import com.lucas.granjapatos.model.VendedorEntity;
 import com.lucas.granjapatos.repository.VendedorRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 /** Service para cadastro dos Vendedores **/
@@ -16,6 +17,7 @@ public class VendedorService {
         this.vendedorRepository = vendedorRepository;
     }
 
+    @Transactional
     public VendedorEntity cadastrarVendedor(CadastroVendedor dto) {
 
 
